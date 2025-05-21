@@ -44,11 +44,11 @@ export default defineConfig()
 ```mjs
 // @ts-check
 
-import { defineConfig, config } from '@ntnyq/prettier-config'
+import { defineConfig } from '@ntnyq/prettier-config'
 
 export default defineConfig({
-  ...config,
-
+  printWidth: 100,
+  trailingComma: 'none',
   overrides: [
     {
       files: ['**/*.html'],

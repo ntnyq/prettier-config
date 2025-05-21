@@ -28,6 +28,9 @@ export const DEFAULT_CONFIG: Config = {
   vueIndentScriptAndStyle: false,
 }
 
+/**
+ * @deprecated use `DEFAULT_CONFIG` instead
+ */
 export const config: Config = DEFAULT_CONFIG
 
 /**
@@ -36,8 +39,15 @@ export const config: Config = DEFAULT_CONFIG
  * @param config - Prettier config
  * @returns Prettier config
  */
-export function defineConfig(config: Config = DEFAULT_CONFIG): Config {
-  return config
+export function defineConfig(config: Config = {}): Config {
+  const mergedConfig: Config = {
+    ...DEFAULT_CONFIG,
+    ...config,
+  }
+  return mergedConfig
 }
 
+/**
+ * @deprecated use `DEFAULT_CONFIG` instead
+ */
 export default config
