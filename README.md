@@ -7,6 +7,14 @@
 
 My sharable prettier config.
 
+## Style
+
+- 2 spaces
+- No semi
+- Single quote
+- Trailing comma
+- Avoid arrow parens
+
 ## Install
 
 ```shell
@@ -64,6 +72,19 @@ export default defineConfig({
     },
   ],
 })
+```
+
+## Config in VSCode
+
+Config in `.vscode/settings.json`:
+
+```json
+{
+  "prettier.enable": true,
+  "editor.formatOnSave": true,
+  "prettier.configPath": "./prettier.config.mjs",
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
 ```
 
 ## License
