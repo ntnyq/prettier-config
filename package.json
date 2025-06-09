@@ -2,7 +2,7 @@
   "name": "@ntnyq/prettier-config",
   "type": "module",
   "version": "2.2.0",
-  "packageManager": "pnpm@10.11.0",
+  "packageManager": "pnpm@10.12.1",
   "description": "Sharable prettier config of ntnyq.",
   "keywords": [
     "prettier-config"
@@ -47,18 +47,18 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^5.0.0-beta.3",
+    "@ntnyq/eslint-config": "^5.0.0-beta.5",
     "@ntnyq/prettier-config": "workspace:*",
-    "@types/node": "^22.15.21",
+    "@types/node": "^22.15.30",
     "bumpp": "^10.1.1",
-    "eslint": "^9.27.0",
+    "eslint": "^9.28.0",
     "husky": "^9.1.7",
     "nano-staged": "^0.8.0",
-    "npm-run-all2": "^8.0.3",
+    "npm-run-all2": "^8.0.4",
     "prettier": "^3.5.3",
-    "tsdown": "^0.11.12",
+    "tsdown": "^0.12.7",
     "typescript": "^5.8.3",
-    "vitest": "^3.1.4"
+    "vitest": "^3.2.2"
   },
   "nano-staged": {
     "*.{js,ts,mjs,cjs,md,yml,yaml,toml,json}": "eslint --fix"
