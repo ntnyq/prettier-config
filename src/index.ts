@@ -29,11 +29,6 @@ export const DEFAULT_CONFIG: Config = {
 }
 
 /**
- * @deprecated use `DEFAULT_CONFIG` instead
- */
-export const config: Config = DEFAULT_CONFIG
-
-/**
  * Define Prettier config
  *
  * @param config - Prettier config
@@ -46,8 +41,3 @@ export function defineConfig(config: Config = {}): Config {
   }
   return mergedConfig
 }
-
-/**
- * @deprecated use `DEFAULT_CONFIG` instead
- */
-export default config
