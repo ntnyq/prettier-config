@@ -125,7 +125,8 @@ describe('default config', () => {
       parser: 'typescript',
     })
     expect(result).toMatchInlineSnapshot(`
-      "// prettier-ignore
+      "/// <reference lib="dom" />
+      // prettier-ignore
       {
               console.log('hello world')
       }
