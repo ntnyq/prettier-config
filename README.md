@@ -7,6 +7,10 @@
 
 My sharable prettier config.
 
+## Requirement
+
+Prettier v3.5.0+.
+
 ## Style
 
 - 2 spaces
