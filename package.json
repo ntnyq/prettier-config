@@ -50,7 +50,7 @@
     "prettier": "^3.5.0"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^5.9.0",
+    "@ntnyq/eslint-config": "^6.0.0",
     "@ntnyq/prettier-config": "workspace:*",
     "bumpp": "^11.0.1",
     "eslint": "^9.39.4",
