@@ -33,13 +33,13 @@ importers:
         specifier: ^3.8.1
         version: 3.8.1
       tsdown:
-        specifier: ^0.21.5
+        specifier: ^0.21.7
         version: 0.21.7(synckit@0.11.12)(typescript@6.0.2)
       typescript:
         specifier: ^6.0.2
         version: 6.0.2
       vitest:
-        specifier: ^4.1.1
+        specifier: ^4.1.2
         version: 4.1.2(@types/node@20.19.25)(happy-dom@20.0.11)(vite@7.2.4(@types/node@20.19.25)(jiti@2.6.1)(yaml@2.8.2))
 
 packages:

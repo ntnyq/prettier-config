@@ -58,9 +58,9 @@
     "nano-staged": "^0.9.0",
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.8.1",
-    "tsdown": "^0.21.5",
+    "tsdown": "^0.21.7",
     "typescript": "^6.0.2",
-    "vitest": "^4.1.1"
+    "vitest": "^4.1.2"
   },
   "nano-staged": {
     "*.{js,ts,mjs,cjs,md,yml,yaml,toml,json}": "eslint --fix"
