@@ -22,6 +22,7 @@
     "javascriptreact",
     "typescriptreact"
   ],
+  "js/ts.experimental.useTsgo": true,
   "cSpell.words": [
     "bumpp",
     "changelogithub",
@@ -31,6 +32,7 @@
     "lcov",
     "pnpm",
     "tsdown",
+    "tsgo",
     "unrs",
     "vite",
     "vitepress",

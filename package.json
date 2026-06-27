@@ -2,7 +2,7 @@
   "name": "@ntnyq/prettier-config",
   "type": "module",
   "version": "3.0.1",
-  "packageManager": "pnpm@11.6.0",
+  "packageManager": "pnpm@11.9.0",
   "description": "Sharable prettier config of ntnyq.",
   "keywords": [
     "prettier",
@@ -44,23 +44,23 @@
     "release:check": "run-s lint typecheck test",
     "release:version": "bumpp",
     "test": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsgo --noEmit"
   },
   "peerDependencies": {
-    "prettier": "^3.5.0"
+    "prettier": "^3.9.0"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^6.1.5",
+    "@ntnyq/eslint-config": "^7.0.0-beta.8",
     "@ntnyq/prettier-config": "workspace:*",
+    "@typescript/native-preview": "7.0.0-dev.20260627.2",
     "bumpp": "^11.1.0",
-    "eslint": "^10.5.0",
+    "eslint": "^10.6.0",
     "husky": "^9.1.7",
     "nano-staged": "^1.0.2",
     "npm-run-all2": "^9.0.2",
-    "prettier": "^3.8.4",
-    "tsdown": "^0.22.2",
-    "typescript": "^6.0.3",
-    "vitest": "^4.1.8"
+    "prettier": "^3.9.0",
+    "tsdown": "^0.22.3",
+    "vitest": "^4.1.9"
   },
   "nano-staged": {
     "*.{js,ts,mjs,cjs,md,yml,yaml,toml,json}": "eslint --fix"
