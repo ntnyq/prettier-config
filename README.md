@@ -9,7 +9,7 @@ My sharable prettier config.
 
 ## Requirement
 
-Prettier v3.5.0+.
+Prettier v3.9.0+.
 
 ## Style
 

@@ -15,7 +15,7 @@ importers:
         specifier: workspace:*
         version: 'link:'
       '@typescript/native-preview':
-        specifier: 7.0.0-dev.20260627.2
+        specifier: ^7.0.0-dev.20260627.2
         version: 7.0.0-dev.20260627.2
       bumpp:
         specifier: ^11.1.0
