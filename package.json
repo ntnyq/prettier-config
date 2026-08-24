@@ -2,7 +2,7 @@
   "name": "@ntnyq/prettier-config",
   "type": "module",
   "version": "3.1.0",
-  "packageManager": "pnpm@11.21.0",
+  "packageManager": "pnpm@11.22.0",
   "description": "Sharable prettier config of ntnyq.",
   "keywords": [
     "prettier",
@@ -50,10 +50,10 @@
     "prettier": "^3.9.0"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^7.0.0-beta.15",
+    "@ntnyq/eslint-config": "^7.0.0-beta.16",
     "@ntnyq/prettier-config": "workspace:*",
     "@typescript/native-preview": "^7.0.0-dev.20260707.2",
-    "bumpp": "^12.2.0",
+    "bumpp": "^12.2.1",
     "eslint": "^10.8.1",
     "husky": "^9.1.7",
     "nano-staged": "^1.0.2",
