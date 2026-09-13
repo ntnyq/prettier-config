@@ -2,7 +2,7 @@
   "name": "@ntnyq/prettier-config",
   "type": "module",
   "version": "3.1.0",
-  "packageManager": "pnpm@11.25.0",
+  "packageManager": "pnpm@12.4.1",
   "description": "Sharable prettier config of ntnyq.",
   "keywords": [
     "prettier",
@@ -21,12 +21,12 @@
   "exports": {
     "./package.json": "./package.json",
     ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
     }
   },
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
   "files": [
     "dist"
   ],
@@ -37,32 +37,31 @@
   "scripts": {
     "build": "tsdown",
     "dev": "tsdown --watch",
-    "lint": "eslint",
+    "lint": "oxlint",
     "prepare": "husky",
     "prepublishOnly": "pnpm run build",
     "release": "run-s release:check release:version",
     "release:check": "run-s lint typecheck test",
     "release:version": "bumpp",
     "test": "vitest",
-    "typecheck": "tsgo --noEmit"
+    "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
     "prettier": "^3.9.0"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^7.0.0-beta.18",
     "@ntnyq/prettier-config": "workspace:*",
-    "@typescript/native-preview": "^7.0.0-dev.20260707.2",
-    "bumpp": "^12.2.2",
-    "eslint": "^10.9.1",
+    "bumpp": "^12.3.0",
     "husky": "^9.1.7",
     "nano-staged": "^1.0.2",
     "npm-run-all2": "^9.0.3",
+    "oxlint": "^1.82.0",
     "prettier": "^3.9.6",
-    "tsdown": "^0.22.14",
-    "vitest": "^4.1.11"
+    "tsdown": "^0.23.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.0"
   },
   "nano-staged": {
-    "*.{js,ts,mjs,cjs,md,yml,yaml,toml,json}": "eslint --fix"
+    "*.{js,ts,mjs,tsx}": "oxlint --fix"
   }
 }

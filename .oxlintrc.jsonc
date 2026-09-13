@@ -1,0 +1,31 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["oxc", "eslint", "typescript"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "nursery": "warn",
+    "pedantic": "warn",
+    "style": "warn",
+    "perf": "warn",
+  },
+  "ignorePatterns": ["**/dist/**", "**/node_modules/**", "**/fixtures/**"],
+  "rules": {
+    "sort-imports": "off",
+    "func-style": [
+      "warn",
+      "declaration",
+      {
+        "allowArrowFunctions": true,
+      },
+    ],
+  },
+  "overrides": [
+    {
+      "files": ["**/tests/**.test.ts", "**/tests/**.spec.ts"],
+      "rules": {
+        "max-lines-per-function": "off",
+      },
+    },
+  ],
+}
