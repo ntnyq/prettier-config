@@ -2,7 +2,7 @@
   "name": "@ntnyq/prettier-config",
   "type": "module",
   "version": "3.1.0",
-  "packageManager": "pnpm@12.17.0",
+  "packageManager": "pnpm@12.21.0",
   "description": "Sharable prettier config of ntnyq.",
   "keywords": [
     "prettier",
@@ -55,11 +55,11 @@
     "husky": "^9.1.7",
     "nano-staged": "^1.0.2",
     "npm-run-all2": "^9.0.4",
-    "oxlint": "^1.90.0",
-    "prettier": "^3.9.10",
-    "tsdown": "^0.23.4",
+    "oxlint": "^1.93.0",
+    "prettier": "^3.10.1",
+    "tsdown": "^0.23.7",
     "typescript": "^7.0.2",
-    "vitest": "^5.0.5"
+    "vitest": "^5.1.0"
   },
   "nano-staged": {
     "*.{js,ts,mjs,tsx}": "oxlint --fix"
